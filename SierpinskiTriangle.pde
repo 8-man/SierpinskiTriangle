@@ -8,19 +8,19 @@ public void draw()
 {
   sierpinski(80, 400, 350);
 }
-public void mouseDragged()//optional
+public void keyTyped()//optional
 {
-  if (key == 'a')
+  if (key == 'a' || key == 'A')
   {
     if(deku > 5)
-    deku = deku * 5;
+    deku = deku / 2;
     else
     deku = deku * 1;
   }
-  if (key == 'd')
+  if (key == 'd' || key == 'D')
    {
      if(deku < 500)
-     deku = deku / 2;
+     deku = deku  * 2;
      else
      deku = deku * 1;
    }
